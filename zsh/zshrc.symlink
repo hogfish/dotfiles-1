@@ -1,8 +1,25 @@
+# Path to your oh-my-zsh configuration.
+#ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+#ZSH_THEME="drbunsen"
+
+#source $ZSH/oh-my-zsh.sh
+
+# Aliases
+alias be="bundle exec"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(osx rails)
+
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
+export EDITOR="vim"
 
-# your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+unsetopt correct_all
 
 # all of our zsh files
 typeset -U config_files
