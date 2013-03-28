@@ -92,3 +92,10 @@ let g:NERDTreeWinSize = 30
 au Bufread,BufNewFile *.feature set filetype=gherkin
 au! Syntax gherkin source ~/.vim/cucumber.vim
 filetype plugin indent on
+
+" ----------------------------------------------------------------------------
+" Fix for pasting indentation issue
+" ----------------------------------------------------------------------------
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
